@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="720px"
+    android:layout_height="1184px"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/textView_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="10sp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="5.0"
+        android:text="QTY: 0"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textCursorDrawable="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_batchno" />
+
+    <TextView
+        android:id="@+id/textView_bin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="5.0"
+        android:text="BIN: FP1169"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textCursorDrawable="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_qty" />
+
+    <ImageButton
+        android:id="@+id/imageButton_tick"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.8"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/checked" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="76dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/nhslogo" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53999996" />
+
+    <TextView
+        android:id="@+id/textView_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5sp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="5.0"
+        android:text="Scan The Data Matrix On The Shelf / Rack Location"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Title" />
+
+    <TextView
+        android:id="@+id/textView_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5sp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="5.0"
+        android:text="STORES SYSTEM"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textCursorDrawable="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_shelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="10sp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="5.0"
+        android:text="SHELF / RACK: FP02809"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textCursorDrawable="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_bin" />
+
+    <TextView
+        android:id="@+id/textView_batchno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:padding="10sp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1.0"
+        android:shadowDy="1.0"
+        android:shadowRadius="5.0"
+        android:text="000000"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textCursorDrawable="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_subtitle" />
+
+    <RelativeLayout
+        android:id="@+id/RL3"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/oval" />
+
+        <TextView
+            android:id="@+id/textView_initials"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:padding="5sp"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="5.0"
+            android:text="ZZ"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textColorLink="@android:color/white"
+            android:textCursorDrawable="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:alpha="0.3"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:alpha="0.1"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:alpha="0.3"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
